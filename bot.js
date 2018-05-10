@@ -1,5 +1,5 @@
+require('dotenv').config();
 var Twit = require('twit');
-
 var config = require('./config');
 var T = new Twit(config);
 
@@ -11,7 +11,7 @@ function tweetIt() {
   var r = Math.floor(Math.random()*100);
   
   var tweet = {
-    status: ` here is a random number ${r} #codingrainbow from node.js`
+    status: `Here is a random number ${r} #codingrainbow from node.js`
   }
 
   T.post('statuses/update', tweet, tweeted);
