@@ -11,7 +11,7 @@ function tweetIt() {
   var r = Math.floor(Math.random()*100);
   
   var tweet = {
-    status: `Here is a random number ${r} #codingrainbow from node.js`
+    status: `Here is a random number ${r}!`
   }
 
   T.post('statuses/update', tweet, tweeted);
